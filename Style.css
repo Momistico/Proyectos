@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   padding: 0 1rem;
 }
 
-/* HEADER */
+
 header {
   background: linear-gradient(to right, #8e2de2, #4a00e0);
   color: white;
@@ -46,7 +46,7 @@ nav a:hover {
   color: #ffeb3b;
 }
 
-/* MAIN */
+
 main {
   max-width: 900px;
   margin: 2rem auto;
@@ -56,7 +56,7 @@ main {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* TITULOS */
+
 article h2,
 .galeria h2 {
   text-align: center;
@@ -74,7 +74,7 @@ article p {
   margin-top: 0.5rem;
 }
 
-/* GALERÍA */
+
 .galeria {
   margin-top: 3rem;
   text-align: center;
@@ -111,7 +111,6 @@ article p {
   color: #4a00e0;
 }
 
-/* FOOTER */
 footer {
   background-color: #222;
   color: white;
