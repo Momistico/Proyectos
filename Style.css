@@ -1,4 +1,4 @@
-
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -6,20 +6,23 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f2f2f2;
+  font-family: 'Outfit', sans-serif;
+  background-color: #fafafa;
   color: #333;
   line-height: 1.6;
   padding: 0 1rem;
 }
 
-
+/* HEADER */
 header {
-  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
   color: white;
   padding: 2rem 1rem;
   text-align: center;
   border-bottom: 5px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header h1 {
@@ -46,7 +49,7 @@ nav a:hover {
   color: #ffeb3b;
 }
 
-
+/* MAIN */
 main {
   max-width: 900px;
   margin: 2rem auto;
@@ -56,7 +59,7 @@ main {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-
+/* TITULOS */
 article h2,
 .galeria h2 {
   text-align: center;
@@ -66,7 +69,12 @@ article h2,
 }
 
 article {
+  background-color: #ffffff;
+  padding: 1.5rem;
   margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
 }
 
 article p {
@@ -74,7 +82,17 @@ article p {
   margin-top: 0.5rem;
 }
 
+/* SEPARADOR */
+.separador {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  margin: 2rem auto;
+  width: 80%;
+  border-radius: 10px;
+}
 
+/* GALERÍA */
 .galeria {
   margin-top: 3rem;
   text-align: center;
@@ -103,6 +121,8 @@ article p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  border: 4px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .contenedor-galeria figcaption {
@@ -111,6 +131,7 @@ article p {
   color: #4a00e0;
 }
 
+/* FOOTER */
 footer {
   background-color: #222;
   color: white;
