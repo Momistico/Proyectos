@@ -50,12 +50,22 @@ nav a:hover {
 
 .banner-header {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
   display: block;
   margin: 10px auto;
   border-radius: 12px;
   
 }
+
+.autor {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-top: -0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
 
 
 main {
