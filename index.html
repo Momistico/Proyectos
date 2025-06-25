@@ -7,22 +7,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+
+<body id="top">
   <header>
-    <h1>📝 Mi Blog Personal</h1>
+    <h1> Mi Blog 🎨</h1>
     <p class="autor">Cristian Mendez O.</p>
   <img src="img/gnome.png" alt="Gnome arcoíris" class="banner-header" />
   <nav>
-    <ul>
-      <li><a href="#">🏠 Inicio</a></li>
-      <li><a href="#">👨‍💻 Sobre mí</a></li>
-      <li><a href="#contacto">✉️ Contacto</a></li>
-    </ul>
-  </nav>
+  <div id="menu">
+      <button onclick="verInicio()">🏠 Inicio</button>
+      <button onclick="verSobreMi()">👤 Sobre Mi</button>
+      <button onclick="verMetas()">🎯 Metas</button>
+      <button onclick="verHobbie()">🎮 Hobbies</button>
+      <button onclick="verGaleria()">🐱 Michis Magicos</button>
+      <button onclick="verContacto()">✉️ CONTACTO</button>
+    </div>
+</nav>
 </header>
 
   <main>
-    <article>
+    <section id="inicio" class="bienvenida">
+  <h2>👋 ¡Bienvenido a mi blog personal!</h2>
+  <p>
+    Este espacio está dedicado a compartir quién soy, mis metas, mis intereses y, por supuesto, a mis adorables gatos 🐾. 
+    Aquí iré dejando registros de mi camino como estudiante de programación, mis avances y aprendizajes. ¡Gracias por estar aquí!
+  </p>
+</section>
+
+<hr class="separador">
+
+    <article id="sobremi">
       <h2>👤 Sobre Mí</h2>
       <p>
         Me llamo Cristian y nací en septiembre del 87. Aún recuerdo el primer PC que armé y, desde ese entonces, no he parado de personalizar mis tarros. 💻
@@ -32,7 +46,7 @@
 
     <hr class="separador">
 
-    <article>
+    <article id="metas">
       <h2>🎯 Mis Metas</h2>
       <p>
         Mi gran meta para este año es terminar mi carrera de Analista Programador y luego continuar con alguna Ingeniería relacionada con informática, para así asegurar mi futuro y lograr los proyectos de vida que tengo en mente. 🚀
@@ -41,7 +55,7 @@
 
     <hr class="separador">
 
-    <article>
+    <article id="hobbie">
       <h2>🎧 Hobbies y Gustos</h2>
       <p>
         Me gusta mucho los videojuegos, la música y la lectura de autores como Lovecraft y Poe. 📚🎶
@@ -49,7 +63,9 @@
       </p>
     </article>
 
-    <section class="galeria">
+    <hr class="separador">
+
+    <section id="galeriagatos" class="galeria">
       <h2>📸 Galería de Mis Gatos</h2>
       <div class="contenedor-galeria">
         <figure>
@@ -66,10 +82,27 @@
         </figure>
       </div>
     </section>
+
+    <hr class="separador">
+
+  <section id="contacto">
+      <h2>📬 Formulario de Contacto</h2>
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" />
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" />
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        <button type="button" onclick="validarFormulario()">Enviar</button>
+      </form>
+    </section>
   </main>
 
   <footer>
     <p>© 2025 Cristian Mendez Ormeño.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
