@@ -8,25 +8,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body id="top">
+<body>
   <header>
     <h1> Mi Blog 🎨</h1>
     <p class="autor">Cristian Mendez O.</p>
   <img src="img/gnome.png" alt="Gnome arcoíris" class="banner-header" />
-  <nav>
   <div id="menu">
-      <button onclick="verInicio()">🏠 Inicio</button>
-      <button onclick="verSobreMi()">👤 Sobre Mi</button>
-      <button onclick="verMetas()">🎯 Metas</button>
-      <button onclick="verHobbie()">🎮 Hobbies</button>
-      <button onclick="verGaleria()">🐱 Michis Magicos</button>
-      <button onclick="verContacto()">✉️ CONTACTO</button>
+     <button id="boton-inicio">🏠 INICIO</button>
+     <button id="boton-sobremi">👤 Sobre Mi</button>
+     <button id="boton-mis-metas">🎯 Metas</button>
+     <button id="boton-mis-hobbie">🎮 Hobbies</button>
+     <button id="boton-mis-gatos">🐱 Michis Magicos</button>
+     <button id="boton-contacto">✉️ CONTACTO</button>
+      
     </div>
-</nav>
 </header>
 
   <main>
-    <section id="inicio" class="bienvenida">
+    <section id="inicio" class="seccion">
   <h2>👋 ¡Bienvenido a mi blog personal!</h2>
   <p>
     Este espacio está dedicado a compartir quién soy, mis metas, mis intereses y, por supuesto, a mis adorables gatos 🐾. 
@@ -34,9 +33,9 @@
   </p>
 </section>
 
-<hr class="separador">
 
-    <article id="sobremi">
+
+    <article id="sobremi" class="seccion">
       <h2>👤 Sobre Mí</h2>
       <p>
         Me llamo Cristian y nací en septiembre del 87. Aún recuerdo el primer PC que armé y, desde ese entonces, no he parado de personalizar mis tarros. 💻
@@ -44,18 +43,18 @@
       </p>
     </article>
 
-    <hr class="separador">
+  
 
-    <article id="metas">
+    <article id="metas" class="seccion">
       <h2>🎯 Mis Metas</h2>
       <p>
         Mi gran meta para este año es terminar mi carrera de Analista Programador y luego continuar con alguna Ingeniería relacionada con informática, para así asegurar mi futuro y lograr los proyectos de vida que tengo en mente. 🚀
       </p>
     </article>
 
-    <hr class="separador">
+   
 
-    <article id="hobbie">
+    <article id="hobbie" class="seccion">
       <h2>🎧 Hobbies y Gustos</h2>
       <p>
         Me gusta mucho los videojuegos, la música y la lectura de autores como Lovecraft y Poe. 📚🎶
@@ -63,10 +62,10 @@
       </p>
     </article>
 
-    <hr class="separador">
+   
 
-    <section id="galeriagatos" class="galeria">
-      <h2>📸 Galería de Mis Gatos</h2>
+    <section id="galeriagatos" class="seccion">
+      <h2>📸 Michi Galeria</h2>
       <div class="contenedor-galeria">
         <figure>
           <img src="img/kumokali.jpeg" alt="Kumo y Kali">
@@ -85,19 +84,22 @@
 
     <hr class="separador">
 
-  <section id="contacto">
-      <h2>📬 Formulario de Contacto</h2>
-      <form id="formulario-contacto">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" />
-        <label for="email">Correo:</label>
-        <input type="email" id="email" name="email" />
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-        <button type="button" onclick="validarFormulario()">Enviar</button>
-      </form>
-    </section>
-  </main>
+  <section id="contacto" class="seccion">
+  <h2>📬 Contacto</h2>
+  <form id="form-contacto">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Tu nombre completo">
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" placeholder="correo@ejemplo.com">
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+    <button type="button" onclick="validarFormulario()">Enviar</button>
+  </form>
+</section>
+</main>
 
   <footer>
     <p>© 2025 Cristian Mendez Ormeño.</p>
